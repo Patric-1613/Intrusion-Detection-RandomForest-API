@@ -1,0 +1,99 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('static/background.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+}
+
+/* Container for the form and other content */
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    width: 70%; /* Adjust this width based on your preference */
+    max-width: 900px; /* Maximum width for responsiveness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    color: #f2f2f2;
+    margin-bottom: 30px;
+}
+
+/* Flexbox for rows */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Each column inside the row */
+.row div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #dcdcdc;
+}
+
+/* Input fields styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: black;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 50%; /* Adjust the size of the button */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack the inputs vertically on small screens */
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Full-width button for mobile */
+    }
+}
